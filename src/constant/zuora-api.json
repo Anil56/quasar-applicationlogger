@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Create an account",
+    "type": "accountRegistration",
+    "calledAtLocations": [
+      {
+        "service": "account-service",
+        "fileName": "user.service.js",
+        "functionName": "createAccount->addEditZuoraAccount"
+      }
+    ],
+    "description": "Creates a customer account with a payment method, a bill-to contact, and an optional sold-to contact. Request and response field descriptions and sample code are provided. Use this operation to optionally create a subscription, invoice for that subscription, and collect payment through the default payment method. The transaction is atomic; if any part fails for any reason, the entire transaction is rolled back.",
+    "officialDocumentation": "https://www.zuora.com/developer/api-reference/#operation/POST_Account",
+    "url": "https://rest.sandbox.na.zuora.com/v1/accounts",
+    "method": "POST",
+    "payload": {
+      "name": "Google",
+      "autoPay": false,
+      "billCycleDay": 0,
+      "accountNumber": "LV01655000",
+      "crmId": "0010200000DG7KBAA1",
+      "CustomerType__c": "Business",
+      "billToContact": {
+        "firstName": "Zuora",
+        "lastName": "Quasar",
+        "workPhone": "+1 (343) 534-3534",
+        "workEmail": "zuoratest@demo.com",
+        "address1": "Luffy Home, Laftel",
+        "address2": "",
+        "state": "AL",
+        "city": "sdfsdfsdf",
+        "country": "United States",
+        "zipCode": "32342"
+      },
+      "currency": "USD",
+      "BillingEntity__c": "Seagate Technology LLC",
+      "LocalCurrency__c": "USD",
+      "Tax_Billing_Country__c": "US",
+      "invoiceTemplateId": "8ac69ff27738174501773d49a9090427",
+      "creditMemoTemplateId": "8ac69a1775e5c4bb01760b3fce857716",
+      "debitMemoTemplateId": "8ac69a17769363d00176ac21c51a7764",
+      "paymentGateway": "Cybersource v1.97",
+      "sequenceSetId": "8ac698ea74be968d0174bebd756701f3",
+      "communicationProfileId": "8ac698ea74be968d0174bebd6bc7010f"
+    }
+  }
+]
